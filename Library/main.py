@@ -475,9 +475,5 @@ class FeatureSelector:
             #print(f"seleceted features: {objeto_numpy.dataset_selected_features}")
             #print(f"non selected features (NOT UPDATED): {objeto_numpy.dataset_non_selected_columns}")
 
-    
-        #with open('save/save_IMV_ABA/relax_mRMR/fold_2.txt ', 'w') as f:
-        #    for sublist in all_selected_features:
-        #        f.write(','.join(map(str, sublist)) + '\n')
 
         
