@@ -17,4 +17,18 @@ Scipy
 
 ## Quickstart
 
-A basic example is coded in *example.ipynb*.
+A basic example is coded in *Library/example.ipynb*.
+
+## References 
+
+[1] V. Balasubramanian, S.-S. Ho, and V. Vovk, Conformal Prediction
+for Reliable Machine Learning: Theory, Adaptations and Applications,
+1st ed. San Francisco, CA, USA: Morgan Kaufmann Publishers Inc.,
+2014.
+
+[2] T. Bellotti, Z. Luo, and A. Gammerman, “Strangeness Minimisation
+Feature Selection with Confidence Machines,” in Intelligent Data Engineering
+and Automated Learning IDEAL 2006, ser. Lecture Notes in
+Computer Science, E. Corchado, H. Yin, V. Botti, and C. Fyfe, Eds.
+Berlin, Heidelberg: Springer, 2006, pp. 978–985.
+
