@@ -10,7 +10,7 @@ We also provide the well known mRMR, JMI and relaxMRMR methods implemented in a 
 
 Python 3.7 +
 Scikit-learnt 1.2.2+
-Numpy 
+Numpy <2.0.0
 Scipy 
 
 
