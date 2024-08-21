@@ -17,7 +17,7 @@ Scipy
 
 ## Quickstart
 
-A basic example is coded in *Library/example.ipynb*.
+A basic example is coded at *Library/example.ipynb*.
 
 ## References 
 
