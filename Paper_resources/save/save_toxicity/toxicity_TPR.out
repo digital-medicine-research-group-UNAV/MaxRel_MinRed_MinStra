@@ -1,0 +1,5 @@
+mRMR
+Traceback (most recent call last):
+  File "/home/mlopezdecas/code/MarkovBoundary.py", line 63, in <module>
+    with open(MB_file +'.pickle', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'save/save_toxicity/toxicity_MarkovBoundariesColumnPossitions.pickle'
