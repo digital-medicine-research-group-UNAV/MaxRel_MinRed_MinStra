@@ -1,0 +1,24 @@
+METHOD:  mRMR_MS
+CLASSES:  [0, 1, 2]
+0 / 50
+1 / 50
+METHOD:  mRMR_MS
+CLASSES:  [0, 1, 2]
+0 / 50
+1 / 50
+METHOD:  mRMR_MS
+CLASSES:  [0, 1, 2]
+0 / 50
+1 / 50
+2 / 50
+2 / 50
+2 / 50
+3 / 50
+3 / 50
+3 / 50
+4 / 50
+4 / 50
+4 / 50
+slurmstepd: error: *** STEP 1069532.5 ON nodo11 CANCELLED AT 2024-07-01T09:24:24 ***
+slurmstepd: error: *** STEP 1069532.4 ON nodo11 CANCELLED AT 2024-07-01T09:24:24 ***
+slurmstepd: error: *** STEP 1069532.3 ON nodo11 CANCELLED AT 2024-07-01T09:24:24 ***
