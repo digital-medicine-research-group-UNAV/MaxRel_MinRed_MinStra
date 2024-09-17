@@ -19,6 +19,50 @@ Scipy
 
 A basic example is coded at *Library/example.ipynb*.
 
+```python
+import numpy as np
+from sklearn.datasets import make_classification
+from main import FeatureSelector
+
+# Create a synthetic classification dataset
+
+X_tr: np.ndarray
+Y_tr: np.ndarray
+n_informative: int = 15
+n_classes: int = 3
+
+X_tr, Y_tr = make_classification(
+    n_samples=300,    
+    n_features=30,     
+    n_informative=n_informative,  
+    n_redundant=5,     
+    n_classes=n_classes)  
+
+```python
+
+```python
+sele = FeatureSelector(classes_ = [i for i in range(n_classes)],
+                       max_features = n_informative,
+                       parallel= True,
+                       verbose = True)  
+
+
+kernel: str = "linear"   # linear is only for mRMR_MS. Other options are "rbf" and "poly".
+split_size: float = 0.5  # is only for mRMR_MS.
+sele.mRMR_MS(X_tr, Y_tr,  kernel, split_size) # compute the mRMR_MS feature selection.
+print(sele.all_selected_features[-1])
+
+sele.mRMR(X_tr, Y_tr)                       # compute the mRMR feature selection.
+print(sele.all_selected_features[-1])
+
+sele.JMI(X_tr, Y_tr)                        # compute the JMI feature selection.
+print(sele.all_selected_features[-1])
+
+sele.relax_mRMR(X_tr, Y_tr)                 # compute the relax_mRMR feature selection.
+print(sele.all_selected_features[-1])
+
+```python
+
 ## References 
 
 [1] T. Bellotti, Z. Luo, and A. Gammerman, “Strangeness Minimisation 
