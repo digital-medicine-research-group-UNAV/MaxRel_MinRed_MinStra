@@ -1,0 +1,9 @@
+Method: mRMR_MS_linear, mRMR. t-statistic: -3.409877874393385, p-value: 0.9995274731577977
+Method: mRMR_MS_linear, JMI. t-statistic: -6.755751353417353, p-value: 0.9999999994896941
+Method: mRMR_MS_linear, relax_mRMR. t-statistic: -2.9293007849629733, p-value: 0.9978871066413405
+Method: mRMR_MS_rbf, mRMR. t-statistic: -1.7983127665211291, p-value: 0.9623968647116102
+Method: mRMR_MS_rbf, JMI. t-statistic: -5.949234025413965, p-value: 0.9999999791315575
+Method: mRMR_MS_rbf, relax_mRMR. t-statistic: -1.267864394658264, p-value: 0.896074793088313
+Method: mRMR_MS_poly, mRMR. t-statistic: 0.694053153704469, p-value: 0.24464542806119438
+Method: mRMR_MS_poly, JMI. t-statistic: -2.348341111292942, p-value: 0.9895670049973665
+Method: mRMR_MS_poly, relax_mRMR. t-statistic: 1.0474805662577333, p-value: 0.14872728176306294
