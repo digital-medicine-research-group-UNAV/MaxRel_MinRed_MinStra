@@ -62,11 +62,13 @@ sele.relax_mRMR(X_tr, Y_tr)                 # compute the relax_mRMR feature sel
 print(sele.all_selected_features[-1])
 
 ```
-Output:
+Output:\\
+
 14 out of 15 features were selected[17, 19, 27, 16, 26, 5, 0, 11, 18, 6, 14, 7, 3, 23, 22]
-14 out of 15 features were selected[17, 4, 19, 11, 16, 27, 6, 5, 14, 7, 26, 0, 10, 12, 21]
-14 out of 15 features were selected[17, 16, 14, 6, 27, 5, 19, 11, 26, 0, 7, 4, 10, 3, 24]
-14 out of 15 features were selected[17, 16, 7, 5, 14, 4, 27, 19, 11, 6, 26, 24, 10, 21, 3]
+
+14 out of 15 features were selected[17, 4, 19, 11, 16, 27, 6, 5, 14, 7, 26, 0, 10, 12, 21]\\
+14 out of 15 features were selected[17, 16, 14, 6, 27, 5, 19, 11, 26, 0, 7, 4, 10, 3, 24]\\
+14 out of 15 features were selected[17, 16, 7, 5, 14, 4, 27, 19, 11, 6, 26, 24, 10, 21, 3]\\
 
 ## References 
 
