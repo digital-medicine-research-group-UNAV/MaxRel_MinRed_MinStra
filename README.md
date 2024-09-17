@@ -38,7 +38,7 @@ X_tr, Y_tr = make_classification(
     n_redundant=5,     
     n_classes=n_classes)  
 
-```python
+```
 
 ```python
 sele = FeatureSelector(classes_ = [i for i in range(n_classes)],
@@ -61,7 +61,7 @@ print(sele.all_selected_features[-1])
 sele.relax_mRMR(X_tr, Y_tr)                 # compute the relax_mRMR feature selection.
 print(sele.all_selected_features[-1])
 
-```python
+```
 
 ## References 
 
