@@ -1,0 +1,6 @@
+METHOD:  mRMR_MS
+CLASSES:  [0, 1]
+0 / 50
+1 / 50
+slurmstepd: error: *** STEP 1074900.4 ON nodo06 CANCELLED AT 2024-07-17T14:50:12 ***
+slurmstepd: error: Detected 1 oom-kill event(s) in step 1074900.4 cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
