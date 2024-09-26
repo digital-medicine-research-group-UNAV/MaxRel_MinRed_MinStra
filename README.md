@@ -1,7 +1,7 @@
-# Minimal Strangeness Maximal Relevance Minimal Redundancy method.
+# Maximal Relevance Minimal Redundancy Minimal Strangeness method.
 
-We provide the novel MinStra_MaxRel_MinRed (MS_mRMR) feature selection method.
-*MS_mRMR*  is the first feature selection method that mixed the concept of strangeness minimization [1] of the Conformal Prediction framework [2] with the feature selection based on information theory (Mutual information). *MS_mRMR*´s objective is minimizing the non-conformity of the features while maximizes the Conditional mutual information. This helps to compute more efficient prediction sets.  
+We provide the novel MaxRel_MinRed_MinStra (mRMR_MS) feature selection method.
+*MS_mRMR*  is the first feature selection method that mixed the concept of strangeness minimization [1] of the Conformal Prediction framework [2] with the feature selection based on information theory (Mutual information). *mRMR_MS*´s objective is minimizing the non-conformity of the features while maximizes the Conditional mutual information. This helps to compute more efficient prediction sets.  
 
 Our library also provides the well known mRMR, JMI and relaxMRMR methods implemented in a fast way. The mutual information estimation is an adapted version of the methodology provided in [3].
 
