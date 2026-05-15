@@ -1,0 +1,445 @@
+{
+  "dataset": "pathfinder",
+  "source_csv": "/mnt/storage/mlopezdecas/MRMR/new_experiments/BNlearn/synthetic_datasets_rds/pathfinder/datasets/pathfinder__target_F44__n_5000__rep_1.csv",
+  "output_csv": "/mnt/storage/mlopezdecas/MRMR/new_experiments/DATA/synthetic/pathfinder/pathfinder__target_F44__n_5000__rep_1.csv",
+  "one_hot_applied": true,
+  "drop_first": true,
+  "one_hot_mappings": {
+    "F100": [
+      "F100_Marked___30_",
+      "F100_Moderate__16_30_",
+      "F100_NA",
+      "F100_Slight__1_15_"
+    ],
+    "F101": [
+      "F101_Form__4_nod_in_4sqcm",
+      "F101_Most_absent",
+      "F101_Most_completely_encircle",
+      "F101_Most_partially_encircle",
+      "F101_Most_thick___10_cells_",
+      "F101_NA",
+      "F101_Some_fusion"
+    ],
+    "F102": [
+      "F102_NA",
+      "F102_Present"
+    ],
+    "F103": [
+      "F103_Almost_all_well_def",
+      "F103_Both_well_and_poor_def",
+      "F103_NA"
+    ],
+    "F104": [
+      "F104_x0_20",
+      "F104_x21_50",
+      "F104_x_50"
+    ],
+    "F105": [
+      "F105_NA",
+      "F105_Present"
+    ],
+    "F106": [
+      "F106_None_similar",
+      "F106_Some_similar",
+      "F106_Yes"
+    ],
+    "F107": [
+      "F107_No",
+      "F107_Yes"
+    ],
+    "F11": [
+      "F11_Many__16_50_",
+      "F11_Present__3_15_",
+      "F11_Rare___3_",
+      "F11_Striking___50_"
+    ],
+    "F13": [
+      "F13_Present__1_2_",
+      "F13_Prominent___2_"
+    ],
+    "F16": [
+      "F16_Present",
+      "F16_Prominent"
+    ],
+    "F17": [
+      "F17_Present___5__",
+      "F17_Prominent___5__"
+    ],
+    "F18": [
+      "F18_NA",
+      "F18_No",
+      "F18_Some"
+    ],
+    "F19": [
+      "F19_Present___5__",
+      "F19_Prominent___5__"
+    ],
+    "F2": [
+      "F2_No",
+      "F2_Yes"
+    ],
+    "F20": [
+      "F20_Many__51_70__",
+      "F20_Present__11_50__",
+      "F20_Rare__1_10__"
+    ],
+    "F21": [
+      "F21_Present",
+      "F21_Prominent"
+    ],
+    "F22": [
+      "F22_NA",
+      "F22_Present"
+    ],
+    "F25": [
+      "F25_Present__1_5_",
+      "F25_Prominent___5_"
+    ],
+    "F3": [
+      "F3_No",
+      "F3_Yes"
+    ],
+    "F30": [
+      "F30_NA",
+      "F30_No_expansion",
+      "F30_Sml__each___10__",
+      "F30_Uniform_marked_exp",
+      "F30_Uniform_mild_mod_exp"
+    ],
+    "F32": [
+      "F32_Present",
+      "F32_Prominent"
+    ],
+    "F33": [
+      "F33_Few__6_25_",
+      "F33_Many__26_100_",
+      "F33_Rare___6_",
+      "F33_Striking___100_"
+    ],
+    "F35": [
+      "F35_Few__6_25_cells_",
+      "F35_Many__26___100_cells_",
+      "F35_Rare___6_cells_",
+      "F35_Sheets___50__of_sec_",
+      "F35_Striking___100_cells_"
+    ],
+    "F36": [
+      "F36_Present__1_5_",
+      "F36_Prominent___5_"
+    ],
+    "F38": [
+      "F38_Clumped",
+      "F38_Fine_and_delicate",
+      "F38_NA",
+      "F38_Vesicular"
+    ],
+    "F39": [
+      "F39_Mod_abund_deep",
+      "F39_NA",
+      "F39_Scanty"
+    ],
+    "F4": [
+      "F4_No",
+      "F4_Yes"
+    ],
+    "F40": [
+      "F40_Convoluted__some_",
+      "F40_Irregular__most_",
+      "F40_Mulberry__some_",
+      "F40_Multilobated__some_",
+      "F40_NA",
+      "F40_Round__most_",
+      "F40_Slightly_irregular__most_"
+    ],
+    "F42": [
+      "F42_mixed__sml_cl_not_pr_vr",
+      "F42_mixed__sml_cl_pr_var_ns",
+      "F42_x_50__13_20u_no_nucleoli",
+      "F42_x_50__13_20u_nucleoli",
+      "F42_x_50___20u_no_nucleoli",
+      "F42_x_50___20u_nucleoli",
+      "F42_x_80__6_12u_no_pr_vr_ns",
+      "F42_x_80__6_12u_pr_vr_ns"
+    ],
+    "F43": [
+      "F43_Present__1_50_",
+      "F43_Prominent___50_"
+    ],
+    "F46": [
+      "F46_x16_50",
+      "F46_x6_15",
+      "F46_x_50"
+    ],
+    "F47": [
+      "F47_Clumped",
+      "F47_Fine_and_delicate",
+      "F47_NA",
+      "F47_Vesicular"
+    ],
+    "F48": [
+      "F48_Mod_abund_deep",
+      "F48_NA",
+      "F48_Scanty"
+    ],
+    "F49": [
+      "F49_Convoluted",
+      "F49_Irregular",
+      "F49_Multilobulated",
+      "F49_NA",
+      "F49_Round",
+      "F49_Slightly_irregular"
+    ],
+    "F5": [
+      "F5_NA",
+      "F5_None",
+      "F5_One"
+    ],
+    "F50": [
+      "F50_No_nucleoli",
+      "F50_x1_prominent__central_",
+      "F50_x1_small",
+      "F50_x_1_central",
+      "F50_x_1_peripheral"
+    ],
+    "F51": [
+      "F51_Present___5__",
+      "F51_Prominent__5_50__"
+    ],
+    "F52": [
+      "F52_Many___20_",
+      "F52_Present__3_20_",
+      "F52_Rare___3_"
+    ],
+    "F53": [
+      "F53_Extensive",
+      "F53_Focal__non_extensive_",
+      "F53_Multifocal__non_extensive_"
+    ],
+    "F54": [
+      "F54_Extensive",
+      "F54_Focal__non_extensive_",
+      "F54_Multifocal__non_extensive_"
+    ],
+    "F55": [
+      "F55_Many___20_",
+      "F55_Present__3_20_",
+      "F55_Rare___3_"
+    ],
+    "F56": [
+      "F56_Extensive",
+      "F56_Focal__non_extensive_",
+      "F56_Multifocal__non_extensive_"
+    ],
+    "F58": [
+      "F58_Present",
+      "F58_Prominent"
+    ],
+    "F6": [
+      "F6_Marked",
+      "F6_Moderate",
+      "F6_Slight"
+    ],
+    "F60": [
+      "F60_Present",
+      "F60_Prominent"
+    ],
+    "F61": [
+      "F61_Few___5__",
+      "F61_Marked__21_50__",
+      "F61_Moderate__6_20__",
+      "F61_Sheets___90__",
+      "F61_Striking__51_90__"
+    ],
+    "F62": [
+      "F62_Immature",
+      "F62_Mature",
+      "F62_Mixed",
+      "F62_NA",
+      "F62_Pleomorphic"
+    ],
+    "F63": [
+      "F63_Few__6_25_",
+      "F63_Many__26_100_",
+      "F63_Rare___6_",
+      "F63_Striking___100_"
+    ],
+    "F7": [
+      "F7_Extensive",
+      "F7_Focal",
+      "F7_Multifocal",
+      "F7_Rare"
+    ],
+    "F70": [
+      "F70_Mod_abund_deep",
+      "F70_Scanty"
+    ],
+    "F71": [
+      "F71_Convoluted",
+      "F71_Irregular",
+      "F71_Markedly_irregular",
+      "F71_Round",
+      "F71_Slightly_irregular"
+    ],
+    "F73": [
+      "F73_Few__6_25_",
+      "F73_Many__26_100_",
+      "F73_Rare___6_",
+      "F73_Striking___100_"
+    ],
+    "F74": [
+      "F74_Distended",
+      "F74_Part_greatly_obliterated",
+      "F74_Patent"
+    ],
+    "F76": [
+      "F76_Marked",
+      "F76_Moderate",
+      "F76_Pronounced",
+      "F76_Slight"
+    ],
+    "F78": [
+      "F78_No",
+      "F78_Yes"
+    ],
+    "F79": [
+      "F79_Present",
+      "F79_Prominent"
+    ],
+    "F8": [
+      "F8_Marked___50__",
+      "F8_Moderate__5_50__"
+    ],
+    "F81": [
+      "F81_Numerous__51_90__",
+      "F81_Sparse__1_10__",
+      "F81_Striking___90__"
+    ],
+    "F82": [
+      "F82_NA",
+      "F82_Numerous__51_90__",
+      "F82_Sparse___10__",
+      "F82_Striking___90__"
+    ],
+    "F83": [
+      "F83_NA",
+      "F83_Numerous__51_90__",
+      "F83_Sparse___10__",
+      "F83_Striking___90__"
+    ],
+    "F84": [
+      "F84_Many__51_70__",
+      "F84_Present__11_50__",
+      "F84_Rare__1_10__"
+    ],
+    "F85": [
+      "F85_Many__51_70__",
+      "F85_Present__11_50__",
+      "F85_Rare__1_10__"
+    ],
+    "F86": [
+      "F86_Many__51_70__",
+      "F86_Present__11_50__",
+      "F86_Rare__1_10__"
+    ],
+    "F9": [
+      "F9_Extensive_SS_pattern",
+      "F9_Focal_SS_pattern",
+      "F9_Multifocal_SS_pattern",
+      "F9_Rare"
+    ],
+    "F90": [
+      "F90_Marked___20_",
+      "F90_Moderate__10_20_",
+      "F90_Slight___10_"
+    ],
+    "F94": [
+      "F94_No_nucleoli",
+      "F94_x1_prominent__central_",
+      "F94_x1_small",
+      "F94_x_1_central",
+      "F94_x_1_peripheral"
+    ],
+    "F96": [
+      "F96_LNC",
+      "F96_NA",
+      "F96_Other"
+    ],
+    "F98": [
+      "F98_x1_25_",
+      "F98_x25_75_",
+      "F98_x75_90_",
+      "F98_x_90_"
+    ],
+    "F99": [
+      "F99_Closely_packed",
+      "F99_Far_apart",
+      "F99_NA",
+      "F99_Separated"
+    ],
+    "Fault": [
+      "Fault_AIDS_involutionary",
+      "Fault_AILD",
+      "Fault_ALIP",
+      "Fault_AML",
+      "Fault_B_immunoblastic",
+      "Fault_Carcinoma",
+      "Fault_Cat_scratch_disease",
+      "Fault_Cellular_phase_NSHD",
+      "Fault_Dermatopathic_laden",
+      "Fault_Diffuse_fibrosis_HD",
+      "Fault_Em_plasmacytoma",
+      "Fault_Florid_follic_hyperp",
+      "Fault_GLH_hyaline_vacular",
+      "Fault_GLH_plasma_cell_type",
+      "Fault_Granulomatous_laden",
+      "Fault_Hairy_cell_leukemia",
+      "Fault_Histiocytosis_x",
+      "Fault_IBL_like_T_cell_lym",
+      "Fault_Infectious_mono",
+      "Fault_Interfollicular_HD",
+      "Fault_Japanese_ATL",
+      "Fault_Kaposis_sarcoma",
+      "Fault_L_H_diffuse_HD",
+      "Fault_L_H_nodular_HD",
+      "Fault_Large_cell__dif",
+      "Fault_Large_cell__fol",
+      "Fault_Leprosy",
+      "Fault_Lymphangiographic",
+      "Fault_Lymphoblastic",
+      "Fault_Malig_histiocytosis",
+      "Fault_Mantle_zone",
+      "Fault_Mantle_zone_hyperl",
+      "Fault_Mast_cell_disease",
+      "Fault_Melanoma",
+      "Fault_Mixed__fcc_dif",
+      "Fault_Mixed__fol",
+      "Fault_Mixed_cellularity_HD",
+      "Fault_Multiple_myeloma",
+      "Fault_Mycosis_fungoides",
+      "Fault_Necrotiz_nonKikuchi",
+      "Fault_Necrotizing_kikuchi",
+      "Fault_Nodular_sclerosis",
+      "Fault_Plasmacytoid_lyctic",
+      "Fault_Reticular_type_HD",
+      "Fault_Rheumatoid_arthritis",
+      "Fault_SHML",
+      "Fault_Sarcoidosis",
+      "Fault_Sinus_hyperplasia",
+      "Fault_Small_cleaved__dif",
+      "Fault_Small_cleaved__fol",
+      "Fault_Small_lymphocytic",
+      "Fault_Small_noncleaved_dif",
+      "Fault_Small_noncleaved_fol",
+      "Fault_Syncytial_NSHD",
+      "Fault_Syphilis",
+      "Fault_T_immunob_lrg",
+      "Fault_T_immunob_mix",
+      "Fault_Toxoplasmosis",
+      "Fault_True_histiocytic",
+      "Fault_Tuberculosis",
+      "Fault_Viral_NOS",
+      "Fault_Whipple_s_disease"
+    ]
+  },
+  "timestamp_utc": "2026-04-01T12:34:01.825558+00:00"
+}

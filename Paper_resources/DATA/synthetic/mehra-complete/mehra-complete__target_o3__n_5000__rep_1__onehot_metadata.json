@@ -1,0 +1,64 @@
+{
+  "dataset": "mehra-complete",
+  "source_csv": "/mnt/storage/mlopezdecas/MRMR/new_experiments/BNlearn/synthetic_datasets_rds/mehra-complete/datasets/mehra-complete__target_o3__n_5000__rep_1.csv",
+  "output_csv": "/mnt/storage/mlopezdecas/MRMR/new_experiments/DATA/synthetic/mehra-complete/mehra-complete__target_o3__n_5000__rep_1.csv",
+  "one_hot_applied": true,
+  "drop_first": true,
+  "one_hot_mappings": {
+    "Region": [
+      "Region_East of England",
+      "Region_Greater London Authority",
+      "Region_North East",
+      "Region_North West",
+      "Region_South East",
+      "Region_South West",
+      "Region_West Midlands",
+      "Region_Yorkshire and The Humber"
+    ],
+    "Season": [
+      "Season_Spring",
+      "Season_Summer",
+      "Season_Winter"
+    ],
+    "Type": [
+      "Type_Background Suburban",
+      "Type_Background Urban",
+      "Type_Industrial Suburban",
+      "Type_Industrial Urban",
+      "Type_Traffic Urban"
+    ],
+    "Zone": [
+      "Zone_Blackpool Urban Area",
+      "Zone_Bournemouth Urban Area",
+      "Zone_Brighton/Worthing/Littlehampton",
+      "Zone_Bristol Urban Area",
+      "Zone_Coventry/Bedworth",
+      "Zone_East Midlands",
+      "Zone_Eastern",
+      "Zone_Greater London Urban Area",
+      "Zone_Greater Manchester Urban Area",
+      "Zone_Kingston upon Hull",
+      "Zone_Leicester Urban Area",
+      "Zone_Liverpool Urban Area",
+      "Zone_North East",
+      "Zone_North West & Merseyside",
+      "Zone_Nottingham Urban Area",
+      "Zone_Portsmouth Urban Area",
+      "Zone_Preston Urban Area",
+      "Zone_Reading/Wokingham Urban Area",
+      "Zone_Sheffield Urban Area",
+      "Zone_South East",
+      "Zone_South West",
+      "Zone_Southampton Urban Area",
+      "Zone_Southend Urban Area",
+      "Zone_Teesside Urban Area",
+      "Zone_The Potteries",
+      "Zone_Tyneside",
+      "Zone_West Midlands",
+      "Zone_West Midlands Urban Area",
+      "Zone_West Yorkshire Urban Area",
+      "Zone_Yorkshire & Humberside"
+    ]
+  },
+  "timestamp_utc": "2026-04-01T15:10:49.591625+00:00"
+}

@@ -1,0 +1,27 @@
+{
+  "dataset": "sangiovese",
+  "source_csv": "/mnt/storage/mlopezdecas/MRMR/new_experiments/BNlearn/synthetic_datasets_rds/sangiovese/datasets/sangiovese__target_pH__n_5000__rep_1.csv",
+  "output_csv": "/mnt/storage/mlopezdecas/MRMR/new_experiments/DATA/synthetic/sangiovese/sangiovese__target_pH__n_5000__rep_1.csv",
+  "one_hot_applied": true,
+  "drop_first": true,
+  "one_hot_mappings": {
+    "Treatment": [
+      "Treatment_T1b",
+      "Treatment_T2a",
+      "Treatment_T2b",
+      "Treatment_T3a",
+      "Treatment_T3b",
+      "Treatment_T4a",
+      "Treatment_T4b",
+      "Treatment_T5a",
+      "Treatment_T5b",
+      "Treatment_T6a",
+      "Treatment_T6b",
+      "Treatment_T7a",
+      "Treatment_T7b",
+      "Treatment_T8a",
+      "Treatment_T8b"
+    ]
+  },
+  "timestamp_utc": "2026-04-01T13:15:14.136575+00:00"
+}

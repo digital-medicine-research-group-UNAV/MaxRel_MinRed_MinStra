@@ -1,0 +1,18 @@
+{
+  "dataset": "healthcare",
+  "source_csv": "/mnt/storage/mlopezdecas/MRMR/new_experiments/BNlearn/synthetic_datasets_rds/healthcare/datasets/healthcare__target_H__n_1000__rep_1.csv",
+  "output_csv": "/mnt/storage/mlopezdecas/MRMR/new_experiments/DATA/synthetic/healthcare/healthcare__target_H__n_1000__rep_1.csv",
+  "one_hot_applied": true,
+  "drop_first": true,
+  "one_hot_mappings": {
+    "A": [
+      "A_old",
+      "A_young"
+    ],
+    "C": [
+      "C_none",
+      "C_severe"
+    ]
+  },
+  "timestamp_utc": "2026-04-01T14:14:14.168639+00:00"
+}

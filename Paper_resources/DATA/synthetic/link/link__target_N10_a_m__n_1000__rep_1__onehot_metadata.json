@@ -1,0 +1,38 @@
+{
+  "dataset": "link",
+  "source_csv": "/mnt/storage/mlopezdecas/MRMR/new_experiments/BNlearn/synthetic_datasets_rds/link/datasets/link__target_N10_a_m__n_1000__rep_1.csv",
+  "output_csv": "/mnt/storage/mlopezdecas/MRMR/new_experiments/DATA/synthetic/link/link__target_N10_a_m__n_1000__rep_1.csv",
+  "one_hot_applied": true,
+  "drop_first": true,
+  "one_hot_mappings": {
+    "N26_d_g": [
+      "N26_d_g_1_2",
+      "N26_d_g_2_2"
+    ],
+    "N29_d_g": [
+      "N29_d_g_1_2",
+      "N29_d_g_2_2"
+    ],
+    "N31_d_g": [
+      "N31_d_g_1_2",
+      "N31_d_g_2_2"
+    ],
+    "N34_d_g": [
+      "N34_d_g_1_2",
+      "N34_d_g_2_2"
+    ],
+    "N5_d_g": [
+      "N5_d_g_1_2",
+      "N5_d_g_2_2"
+    ],
+    "N59_d_g": [
+      "N59_d_g_1_2",
+      "N59_d_g_2_2"
+    ],
+    "N6_d_g": [
+      "N6_d_g_1_2",
+      "N6_d_g_2_2"
+    ]
+  },
+  "timestamp_utc": "2026-04-01T15:08:51.454283+00:00"
+}

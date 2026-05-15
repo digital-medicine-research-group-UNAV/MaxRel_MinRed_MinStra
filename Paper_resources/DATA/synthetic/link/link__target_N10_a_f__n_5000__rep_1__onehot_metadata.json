@@ -1,0 +1,94 @@
+{
+  "dataset": "link",
+  "source_csv": "/mnt/storage/mlopezdecas/MRMR/new_experiments/BNlearn/synthetic_datasets_rds/link/datasets/link__target_N10_a_f__n_5000__rep_1.csv",
+  "output_csv": "/mnt/storage/mlopezdecas/MRMR/new_experiments/DATA/synthetic/link/link__target_N10_a_f__n_5000__rep_1.csv",
+  "one_hot_applied": true,
+  "drop_first": true,
+  "one_hot_mappings": {
+    "N10_d_g": [
+      "N10_d_g_1_2",
+      "N10_d_g_2_2"
+    ],
+    "N11_d_g": [
+      "N11_d_g_1_2",
+      "N11_d_g_2_2"
+    ],
+    "N29_d_g": [
+      "N29_d_g_1_2",
+      "N29_d_g_2_2"
+    ],
+    "N30_d_g": [
+      "N30_d_g_1_2",
+      "N30_d_g_2_2"
+    ],
+    "N31_d_g": [
+      "N31_d_g_1_2",
+      "N31_d_g_2_2"
+    ],
+    "N33_d_g": [
+      "N33_d_g_1_2",
+      "N33_d_g_2_2"
+    ],
+    "N36_d_g": [
+      "N36_d_g_1_2",
+      "N36_d_g_2_2"
+    ],
+    "N37_d_g": [
+      "N37_d_g_1_2",
+      "N37_d_g_2_2"
+    ],
+    "N38_d_g": [
+      "N38_d_g_1_2",
+      "N38_d_g_2_2"
+    ],
+    "N41_d_g": [
+      "N41_d_g_1_2",
+      "N41_d_g_2_2"
+    ],
+    "N42_d_g": [
+      "N42_d_g_1_2",
+      "N42_d_g_2_2"
+    ],
+    "N45_d_g": [
+      "N45_d_g_1_2",
+      "N45_d_g_2_2"
+    ],
+    "N46_d_g": [
+      "N46_d_g_1_2",
+      "N46_d_g_2_2"
+    ],
+    "N49_d_g": [
+      "N49_d_g_1_2",
+      "N49_d_g_2_2"
+    ],
+    "N50_d_g": [
+      "N50_d_g_1_2",
+      "N50_d_g_2_2"
+    ],
+    "N54_d_g": [
+      "N54_d_g_1_2",
+      "N54_d_g_2_2"
+    ],
+    "N57_d_g": [
+      "N57_d_g_1_2",
+      "N57_d_g_2_2"
+    ],
+    "N59_d_g": [
+      "N59_d_g_1_2",
+      "N59_d_g_2_2"
+    ],
+    "N60_d_g": [
+      "N60_d_g_1_2",
+      "N60_d_g_2_2"
+    ],
+    "N63_d_g": [
+      "N63_d_g_1_2",
+      "N63_d_g_2_2"
+    ],
+    "N9_d_g": [
+      "N9_d_g_1_2",
+      "N9_d_g_2_2"
+    ]
+  },
+  "timestamp_utc": "2026-04-01T15:08:50.541215+00:00"
+}
