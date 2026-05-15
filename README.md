@@ -1,86 +1,109 @@
-# Maximal Relevance Minimal Redundancy Minimal Strangeness method.
+# MaxRel-MinRed-MinStra
 
-We provide the novel MaxRel-MinRed-MinStra (mRMR_MS) feature selection method.
-*MS_mRMR*  is the first feature selection method that mixed the concept of strangeness minimization [1] of the Conformal Prediction framework [2] with the feature selection based on information theory (Mutual information). *mRMR_MS*´s objective is minimizing the non-conformity of the features while maximizes the Conditional mutual information. This helps to compute more efficient prediction sets.  
+This repository provides an implementation of **MaxRel-MinRed-MinStra**
+(`mRMR_MS`), a feature-selection criterion that combines information-theoretic
+maximal relevance/minimal redundancy with a minimal-strangeness term inspired by
+conformal prediction.
 
-Our library also provides the well known mRMR, JMI and relax-MRMR methods implemented in a fast way. The mutual information estimation is an adapted version of the methodology provided in [3].
+The library currently exposes four methods:
+
+- `mRMR_MS`: Maximal Relevance, Minimal Redundancy, Minimal Strangeness.
+- `mRMR`: maximal relevance and minimal redundancy.
+- `JMI`: joint mutual information.
+- `relax_mRMR`: relaxed mRMR with conditional redundancy terms.
+
+The code in `Library/` is small and package-oriented. 
 
 
-## Requirements
-
-Python 3.7 +
-Scikit-learnt 1.2.2+
-Numpy <2.0.0
-Scipy 
-
-
+Main dependencies are `numpy`, `pandas`, `scipy` and `scikit-learn`.
 
 ## Quickstart
-
-A basic example is coded at *Library/example.ipynb*.
 
 ```python
 import numpy as np
 from sklearn.datasets import make_classification
-from main import FeatureSelector
 
-# Create a synthetic classification dataset
+from maxrel_minred_minstra import FeatureSelector
 
-X_tr: np.ndarray
-Y_tr: np.ndarray
-n_informative: int = 15
-n_classes: int = 3
+X, y = make_classification(
+    n_samples=300,
+    n_features=30,
+    n_informative=15,
+    n_redundant=5,
+    n_classes=3,
+    random_state=123,
+)
 
-X_tr, Y_tr = make_classification(
-    n_samples=300,    
-    n_features=30,     
-    n_informative=n_informative,  
-    n_redundant=5,     
-    n_classes=n_classes)  
+selector = FeatureSelector(
+    classes_=np.unique(y),
+    max_features=15,
+    kernel="linear",
+    random_state=123,
+)
 
+selected_path = selector.mRMR_MS(X, y)
+print(selected_path[-1])
 ```
+
+Each method returns a cumulative selection path:
 
 ```python
-sele = FeatureSelector(classes_ = [i for i in range(n_classes)],
-                       max_features = n_informative,
-                       parallel= True,
-                       verbose = True)  
-
-
-kernel: str = "linear"   # linear is only for mRMR_MS. Other options are "rbf" and "poly".
-split_size: float = 0.5  # is only for mRMR_MS.
-sele.mRMR_MS(X_tr, Y_tr,  kernel, split_size) # compute the mRMR_MS feature selection.
-print(sele.all_selected_features[-1])
-
-sele.mRMR(X_tr, Y_tr)                       # compute the mRMR feature selection.
-print(sele.all_selected_features[-1])
-
-sele.JMI(X_tr, Y_tr)                        # compute the JMI feature selection.
-print(sele.all_selected_features[-1])
-
-sele.relax_mRMR(X_tr, Y_tr)                 # compute the relax_mRMR feature selection.
-print(sele.all_selected_features[-1])
-
+[
+    [f1],
+    [f1, f2],
+    [f1, f2, f3],
+    ...
+]
 ```
-Output for the 4 feature selection methods applied:
 
-15 features were selected [17, 19, 27, 16, 26, 5, 0, 11, 18, 6, 14, 7, 3, 23, 22]    
-15 features were selected [17, 4, 19, 11, 16, 27, 6, 5, 14, 7, 26, 0, 10, 12, 21]    
-15 features were selected [17, 16, 14, 6, 27, 5, 19, 11, 26, 0, 7, 4, 10, 3, 24]    
-15 features were selected [17, 16, 7, 5, 14, 4, 27, 19, 11, 6, 26, 24, 10, 21, 3]    
+The final subset is also available as:
 
-## References 
+```python
+selector.selected_features_
+```
 
-[1] T. Bellotti, Z. Luo, and A. Gammerman, “Strangeness Minimisation 
-Feature Selection with Confidence Machines,” in Intelligent Data Engineering
-and Automated Learning IDEAL 2006, ser. Lecture Notes in
-Computer Science, E. Corchado, H. Yin, V. Botti, and C. Fyfe, Eds.
-Berlin, Heidelberg: Springer, 2006, pp. 978–985. 2014.
+The notebook `Library/example.ipynb` contains a compact example for all four
+methods.
 
-[2] V. Balasubramanian, S.-S. Ho, and V. Vovk, Conformal Prediction
-for Reliable Machine Learning: Theory, Adaptations and Applications,
-1st ed. San Francisco, CA, USA: Morgan Kaufmann Publishers Inc.
+## Class
 
-[3] O. C. Mesner and C. R. Shalizi, "Conditional Mutual Information Estimation for Mixed, Discrete and Continuous Data," in IEEE Transactions on Information Theory, vol. 67, no. 1, pp. 464-484, Jan. 2021, doi: 10.1109/TIT.2020.3024886.
+```python
+selector = FeatureSelector(
+    classes_=None,
+    lambda_=0.5,
+    max_features=-1,
+    kernel="linear",
+    split_size=0.5,
+    k=3,
+    random_state=None,
+    verbose=False,
+)
+```
+
+Available calls:
+
+```python
+selector.mRMR_MS(X, y)
+selector.mRMR(X, y)
+selector.JMI(X, y)
+selector.relax_mRMR(X, y)
+```
+
+`X` must be a two-dimensional array-like object and `y` a one-dimensional class
+label vector. Feature indices in the returned path refer to the columns of `X`.
 
 
+
+## References
+
+[1] T. Bellotti, Z. Luo, and A. Gammerman, "Strangeness Minimisation Feature
+Selection with Confidence Machines," in *Intelligent Data Engineering and
+Automated Learning IDEAL 2006*, Lecture Notes in Computer Science, pp. 978-985.
+
+[2] V. Balasubramanian, S.-S. Ho, and V. Vovk, *Conformal Prediction for
+Reliable Machine Learning: Theory, Adaptations and Applications*, Morgan
+Kaufmann.
+
+[3] O. C. Mesner and C. R. Shalizi, "Conditional Mutual Information Estimation
+for Mixed, Discrete and Continuous Data," *IEEE Transactions on Information
+Theory*, vol. 67, no. 1, pp. 464-484, Jan. 2021.

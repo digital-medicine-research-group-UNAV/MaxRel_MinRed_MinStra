@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "maxrel-minred-minstra"
+version = "0.1.0"
+description = "Feature selection methods for MaxRel-MinRed-MinStra research experiments."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scipy",
+    "scikit-learn",
+]
+
+[tool.setuptools]
+package-dir = {"" = "Library"}
+
+[tool.setuptools.packages.find]
+where = ["Library"]

@@ -1,1 +1,0 @@
-{"coverage": [], "inefficiency": [], "certainty": [], "uncertainty": [], "mistrust": [], "S_score": [], "F_score": [], "Creditibily": []}
